@@ -12,8 +12,7 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
-    border: none;
-    text-transform: capitalize;
+    
 }
 
 *::selection{
@@ -31,22 +30,24 @@ body{
 }
 
 section{
-    min-height: 80vh;
+    min-height: 50vh;
     padding: 0 9%;
     padding-top: 7.5rem;
+
 }
 
 .btn{
     font-family: 'Inter';
     display: inline-block;
-    margin-top: 4rem;
-    padding: .8rem 3rem;
+    margin-top: 7rem;
+    padding:1.4rem 3rem;
     border-radius: 1rem;
     background: #8C30F5;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
     color: #160026;
     cursor: pointer;
     color: var(--header-color-font);
+    font-weight: bold;
 }
 
 header{
@@ -63,7 +64,19 @@ header{
     justify-content: space-between;
     z-index: 1000;
 }
-
+header .navbar h2{
+    
+    color: var(--header-color-font);
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 8px;
+    margin-right: 40px;
+    
+}
+header .navbar{
+    display: flex;
+}
 header .logo{
     font-size: 2rem;
     font-family: 'Comfortaa', sans-serif;
@@ -75,6 +88,7 @@ header .logo span{
 }
 
 header .navbar a{
+    display: block;
     font-family: 'Comfortaa', sans-serif;
     font-size: 1.2rem;
     margin-left: 2rem;
@@ -97,8 +111,93 @@ header label{
     opacity: 0;
 }
 
+.publicidad {
+    padding-top: 300px;
+}
+.publicidad .card{
+    background-color: #9D93F5;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.publicidad .card .content{
+    margin-top: 140px;
+    font-family: 'Inter';
+    margin-left: 50px;
+}
+
+.publicidad .card .content h2{
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.publicidad .card .content p{
+    font-size: 1.8rem;
+}
+.publicidad .card img{
+    height: 650px;
+    margin-top: -100px;
+}
+.contactanos{
+    font-family: 'Inter';
+    min-height: 50vh;
+    padding-bottom: 220px;
+    width: 100%;
+    display: flex;
+    padding-top: 300px;
+}
+.contactanos .form{
+    background-color:var(--header-color-font);
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 1rem;
+    padding: 3.5rem 1.5rem;
+    margin-top: none;
+}
+.form_container{
+    font-family: 'Inter';
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-auto-columns: 100%;
+}
+.form_container h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #8F12F1;
+}
+.contactanos .form_input{
+    font-family: inherit;
+    font-size: 1.5rem;
+    padding: .8rem 1rem;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 0.2rem;
+}
+.form_input_message{
+    resize: none;
+    padding: 1.8rem 1rem;
+    margin-bottom: .5rem;
+}
+.contactanos .form_btn{
+    font-family: inherit;
+    background-color: #8C30F5;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: .7rem 0;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
 .home{
-    padding-bottom: 300px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-top: 200px;
     display: flex;
     /*flex-direction: column;*/
     align-items: center;
@@ -155,17 +254,23 @@ header label{
     justify-content: center;
     
 }
-
+.vincular .vincular_content{
+    padding-right: 100px
+}
 .vincular .vincular_content h2{
     font-family: 'Inter';
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #18191F;
     margin-bottom: 5%;
 }
 
 .vincular .vincular_content p{
     font-family: 'Inter';
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.vincular img{
+    width: 500px;
 }
 
 .caracteristicas{
@@ -177,7 +282,7 @@ header label{
 
 .caracteristicas .content h2{
     font-family: 'Inter';
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #18191F;
     padding-bottom: 35px;
 }
@@ -185,7 +290,7 @@ header label{
 .caracteristicas .content .lista_caracteristicas{
     display: flex;
     font-family: 'Inter';
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     justify-content: space-between;
 }
 .lista_caracteristicas ul li{
@@ -204,6 +309,17 @@ header label{
 .caracteristicas .content .lista_caracteristicas li{
     list-style: none;
 }
+.caracteristicas .content{
+    padding-right: 150px;
+}
+.caracteristicas .content img{
+    width: 70px;
+    height: 70px;
+}
+
+.caracteristicas .caracteristicas_img img{
+    width: 350px;
+}
 
 .algoritmo{
     background: #FFFFFF;
@@ -218,22 +334,26 @@ header label{
     justify-content: center;
     background:  #8C30F5;
     border-radius: 20px;
-    height: 500px;
-    width: 1500px;
+    height: 350px;
+    width: 1800px;
     position: relative;
     padding-left: 10%;
 }
 
+.algoritmo .card img{
+    width: 350px;
+}
 .algoritmo .content{
     font-family: 'Inter';  
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: var(--header-color-font);
+    padding-right: 150px;
     
 }
 
 .algoritmo .content h3{
     margin-bottom: 20px;
-    
+    font-size: 2.8rem;
 }
 
 .algoritmo .content p{
@@ -245,16 +365,22 @@ header label{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 200px;
 }
-
+.gastos img{
+    width: 450px;
+}
 .gastos .content{
     padding-left: 100px;
     font-family: 'Inter';
-    font-size: 1.5rem;
+    
 }
-
+.gastos .content p{
+    font-size: 2rem;
+}
 .gastos .content h3{
     margin-bottom: 5%;
+    font-size: 3rem;
 }
 
 .comunidad{
@@ -262,46 +388,63 @@ header label{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 100px;
 }
 
 .comunidad .content{
     font-family: 'Inter';
-    font-size: 1.5rem;
+    
     padding-right: 10%;
 }
 
 .comunidad .content h3{
     margin-bottom: 5%;
+    font-size: 3rem;
 }
 
+.comunidad .content p{
+    margin-bottom: 5%;
+    font-size: 2rem;
+}
+.comunidad img{
+    width: 350px;
+}
 .descarga{
     background: #2EC5CE;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    padding-bottom: 87px;
 }
 
 .descarga .content{
     font-family: 'Inter';
-    font-size: 1.5rem;
-    padding-right: 20%;
+    
+    padding-right: 150px;
 }
 
 .descarga .content .title{
     margin-bottom: 5%;
+    font-size: 3rem;
 }
 
 .descarga .content p{
     margin-bottom: 4%;
+    font-size: 2rem;
 }
-
+.img_descarga_app img{
+    width: 230px;
+}
+.img_app img{
+    width: 350px;
+}
 .footer_section{
     background: #0B0D17;
     color: var(--header-color-font);
     display: flex;
     height: 300px;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .footer_section .content{
@@ -313,23 +456,26 @@ header label{
     padding-left: 25px;
 }
 
-.footer_section .content h2{
+.footer_section .content  h2{
     padding-top: 20px;
-    font-size: 1.5rem;
+    font-size: 2.2rem ; 
 }
 
 .footer_section .content p{
     padding-bottom: 20px;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
-
+.footer_section .content h3{
+    
+    font-size: 1.8rem;
+}
 .footer_section .content .menu ul{
     display: flex;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
-.footer_section .content .menu ul li{
-    
+.footer_section .content .menu ul a{
+    color: var(--header-color-font);
     padding-right: 60px;
     list-style: none;
 }
@@ -342,8 +488,11 @@ header label{
 .footer_section .descagar_aplicacion h2{
     padding-top: 20px;
     padding-bottom: 60px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: 'Inter';
+}
+.descagar_aplicacion img{
+    width: 200px;
 }
 
 
@@ -400,7 +549,7 @@ header label{
 
 
 /*media queries*/
-@media (max-width:1200px){
+@media (max-width:1700px){
     html{
         font-size: 72.5%;
         overflow-x: hidden;
@@ -408,16 +557,96 @@ header label{
     .laptop img{
         display: none;
     }
+    .home .image{
+        padding-left: 50px;
+    }
+    .home .image img{
+        padding-left: 100px;
+    }
 }
 
 @media (max-width:768px){
-    
+    header .navbar{
+        display: block;
+    }
+    .home .content{
+        margin-left: 80px;
+        
+    }
+    .vincular .vincular_content{
+        padding-right: 0;
+    }
+    .publicidad{
+        justify-content: center;
+    }
+    .publicidad .card{
+
+        margin-left: 40px;
+        justify-content: center;
+        height: 400px;
+        width: 400px;
+    }
+    .footer_section .descagar_aplicacion a img{
+        display: none;
+    }
+    .footer_section .descagar_aplicacion h2{
+        display: none;
+    }
+    .publicidad .card .content{
+        margin-top: 100px;
+        font-family: 'Inter';
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .gastos .content{
+        padding-left: 0;
+    }
+    .publicidad .mobile_img img{
+        display: none;
+    }
     header label{
         visibility: visible;
         opacity: 1;
     }
+    .comunidad .content{
+        font-family: 'Inter';
+        
+        padding-right: 0;
+    }
+    .descarga .content{
+
+        
+        padding-right: 0;
+    }
+    .caracteristicas .content{
+        padding-right: 0;
+    }
+    .aplicaciones_img{
+        display: none;
+    }
+    .caracteristicas_img{
+        display: none;
+    }
+    .algoritmo .card div img{
+        display: none;
+    }
+    .comunidad .img_comunidad img{
+        display: none;
+    }
+    .img_gastos img{
+        display: none;
+    }
+    .img_app{
+        display: none;
+    }
+    section{
+        min-height: 40vh;
+        padding: 0 9%;
+        padding-top: 7.5rem;
+    }
     header .navbar{
         position: absolute;
+        
         top: 100%;
         left: 0;
         width: 100%;
@@ -435,6 +664,9 @@ header label{
         margin: 2rem 0;
         font-size: 2rem;
     }
+    header .navbar a h2{
+        color:var(--header-color);
+    }
     header input:checked ~ .navbar{
         transform: scaleY(1);
         opacity: 1;
@@ -443,11 +675,120 @@ header label{
     header input:checked ~label::before{
         content: '\f00d';
     }
+    .celular img{
+        display: none;
+    }
+    .publicidad {
+        padding-top: 150px;
+    }
+    
 }
+@media (max-width: 1060px){
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+    .caracteristicas .content{
+        padding-right: 0;
+    }
+    header .navbar{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding:1rem 2rem;
+        border-top: 1px solid rgba(124, 46, 197, 0.2);
+        box-shadow: 0 .5rem 1rem rgba(124, 46, 197, 0.1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    header .navbar a{
+        color:var(--header-color);
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+    header .navbar a h2{
+        color:var(--header-color);
+    }
+    header input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+    }
 
+    header input:checked ~label::before{
+        content: '\f00d';
+    }
+    .algoritmo .card div img{
+        width: 300px;
+    }
+    .gastos .img_gastos img{
+        width: 350px;
+    }
+    .img_comunidad img{
+        width: 300px;
+    }
+    .img_app img{
+        width: 300px;
+    }
+    .caracteristicas .caracteristicas_img img{
+        width: 300px;
+    }
+    .aplicaciones_img img{
+        width: 400px;
+    }
+    .algoritmo .content{
+        font-family: 'Inter';  
+        font-size: 1.5rem;
+        color: var(--header-color-font);
+        padding-right: 0;
+        
+    }
+    section{
+        min-height: 50vh;
+        padding: 0 9%;
+        padding-top: 7.5rem;
+    }
+}
 @media (max-width:450px){
     html{
         font-size: 62.5%;
         overflow-x: hidden;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+        background-size:auto;
+        background-position: center;
+    }
+
+    .footer_section .content{
+        width: auto;
+        overflow:hidden;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .home .content{
+        margin-left: 0;
+        
+    }
+    section{
+        min-height: 30vh;
+        padding: 0 9%;
+        padding-top: 7.5rem;
+    }
+    html{
+        font-size: 50%;
+        
+    }
+    .img_descarga_app img{
+        width: 150px;
     }
 }
