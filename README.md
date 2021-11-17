@@ -1,9 +1,6 @@
 # Landing-Page
 
-## Integrantes
 
-- Christian Joel Cutipa Cañapataña ([Github](https://github.com/joyel124))
-- Omar David Valle Guzman ([Github](https://github.com/OmarValle888))
-- James Renzo Hurtado Gonzales ([Github](https://github.com/jrenzzo))
-- Kurt Matthews Puican Salas ([Github](https://github.com/KurtPuican))
-- Claudia Lucía Rozas Gamero ([Github](https://github.com/ClauRozasG))
+Landing page desarrollador por el equipo "TheUnknows" para el proyecto de software FreHour
+
+Link del sprint backlog del proyecto : https://www.pivotaltracker.com/n/projects/2533524
