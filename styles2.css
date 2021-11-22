@@ -6,13 +6,40 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     justify-content: center;
     font-family: 'Inter', sans-serif;
-    text-align: center;
+    text-align: start;
+    background: #FFFFFF;
 }
 h1{
     text-align: center;
     margin-bottom: 30px;
+}
+section{
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+img{
+    width: 300px;
+    
+}
+.img{
+    padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*media queries*/
+@media (max-width:480px){
+    html{
+        font-size: 72.5%;
+        overflow-x: hidden;
+    }
+    
 }
 

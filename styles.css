@@ -86,7 +86,10 @@ header .logo{
 header .logo span{
     color:turquoise;
 }
-
+.fa-language{
+    color: var(--header-color-font);
+    font-size: 3rem;
+}
 header .navbar a{
     display: block;
     font-family: 'Comfortaa', sans-serif;
@@ -112,7 +115,15 @@ header label{
 }
 
 .publicidad {
-    padding-top: 300px;
+    padding-top: 200px;
+}
+.publicidad .title h2{
+    font-family: 'Inter';
+    text-align: center;
+    font-size: 3rem;
+}
+.publicidad .title{
+    padding-bottom: 200px;
 }
 .publicidad .card{
     background-color: #9D93F5;
@@ -124,7 +135,7 @@ header label{
 }
 
 .publicidad .card .content{
-    margin-top: 140px;
+    margin-top: 8vh;
     font-family: 'Inter';
     margin-left: 50px;
 }
@@ -438,6 +449,22 @@ header label{
 .img_app img{
     width: 350px;
 }
+.videos{
+    justify-content: center;
+    padding-top: none;
+    padding-bottom: 100px;
+}
+.videos h2{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Inter';
+    padding-bottom: 40px;
+}
+.videos .content{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
 .footer_section{
     background: #0B0D17;
     color: var(--header-color-font);
@@ -495,7 +522,47 @@ header label{
     width: 200px;
 }
 
+#myBtn {
+    display: visible; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #2EC5CE; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1px; /* Increase font size */
+    font-family: 'Inter';
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
 
+  #myBtn-2 {
+    font-family: 'Inter';
+    display: visible; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 100px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #9D93F5; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1px; /* Increase font size */
+  }
+  
+  #myBtn-2:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
 
 
 
@@ -563,6 +630,7 @@ header label{
     .home .image img{
         padding-left: 100px;
     }
+   
 }
 
 @media (max-width:768px){
@@ -581,7 +649,7 @@ header label{
     }
     .publicidad .card{
 
-        margin-left: 40px;
+        
         justify-content: center;
         height: 400px;
         width: 400px;
@@ -593,7 +661,7 @@ header label{
         display: none;
     }
     .publicidad .card .content{
-        margin-top: 100px;
+        margin-top: 50px;
         font-family: 'Inter';
         margin-left: 50px;
         margin-right: 50px;
@@ -688,8 +756,22 @@ header label{
         visibility: visible;
         opacity: 1;
     }
+    .publicidad .card{
+        height: auto;
+        margin-left: none;
+    }
+    .publicidad .card .content{
+        padding-bottom: 50px;
+        margin-top: none;
+    }
+    iframe{
+        width: 350px;
+    }
     .caracteristicas .content{
         padding-right: 0;
+    }
+    .mobile_img{
+        display: none;
     }
     header .navbar{
         display: block;
@@ -761,6 +843,21 @@ header label{
         font-size: 62.5%;
         overflow-x: hidden;
     }
+    iframe{
+        width: 250px;
+        height: 150px;
+    }
+    .videos .content {
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+    }
+    .videos .content div{
+        justify-content: center;
+        justify-items: center;
+        width: 200px;
+        padding-bottom: 20px;
+    }
     .home{
         display: flex;
         flex-direction: column;
@@ -780,7 +877,7 @@ header label{
         
     }
     section{
-        min-height: 30vh;
+        min-height: 20vh;
         padding: 0 9%;
         padding-top: 7.5rem;
     }
@@ -790,5 +887,34 @@ header label{
     }
     .img_descarga_app img{
         width: 150px;
+    }
+    .publicidad{
+        min-height: 20vh;
+    }
+    .publicidad .card{
+        margin-left: none;
+        margin-left: none;
+        justify-content: center;
+        height: 400px;
+        width: auto;
+        
+        
+    }
+    .publicidad .card .content{
+       
+        padding-top: none;
+        height: auto;
+    }
+    .publicidad {
+        padding-top: 100px;
+    }
+    .publicidad .title h2{
+        font-size: 3rem;
+    }
+    .publicidad .title{
+        padding-bottom: 100px;
+    }
+    .algoritmo .card .content {
+        padding-right: 30px;
     }
 }
